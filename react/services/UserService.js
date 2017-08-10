@@ -1,10 +1,6 @@
 
 class UserService{
 
-    constructor() {
-        this.url = "https://jsonplaceholder.typicode.com/users/";
-    }
-
     getAllUsers(){
         return fetch("../../users-list.json")
             .then(response => response.json())
